@@ -29,4 +29,5 @@ header ul {
 }
 header ul li {
   display: inline-block;
+  margin-left: 2rem;
 }
