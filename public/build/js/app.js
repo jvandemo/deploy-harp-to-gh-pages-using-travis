@@ -36,7 +36,7 @@
 
     // If the url is ever invalid, e.g. '/unknown-url', then redirect to '/' aka the home state
     $urlRouterProvider
-      .otherwise('homepage');
+      .otherwise('/homepage');
   }
 
   // Inject dependencies;
@@ -51,7 +51,7 @@
 
       $stateProvider
         .state('homepage', {
-          url: 'homepage',
+          url: '/homepage',
           views: {
             'content@': {
               templateUrl: 'components/homepage/homepage.html'

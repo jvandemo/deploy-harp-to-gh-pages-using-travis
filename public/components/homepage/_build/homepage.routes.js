@@ -5,7 +5,7 @@
 
       $stateProvider
         .state('homepage', {
-          url: 'homepage',
+          url: '/homepage',
           views: {
             'content@': {
               templateUrl: 'components/homepage/homepage.html'
