@@ -1,4 +1,13 @@
 (function () {
+  angular.module('app.config', []);
+})();
+(function () {
+  angular.module('app', [
+    'ui.router',
+    'app.config'
+  ]);
+})();
+(function () {
 
   angular.module('app')
     .config(enableHtml5Routing)
@@ -32,5 +41,24 @@
 
   // Inject dependencies;
   addDefaultRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];
+
+})();
+
+(function () {
+
+  angular.module('app')
+    .config(['$stateProvider', function ($stateProvider) {
+
+      $stateProvider
+        .state('homepage', {
+          url: 'homepage',
+          views: {
+            'content@': {
+              templateUrl: 'components/homepage/homepage.html'
+            }
+          }
+        });
+
+    }]);
 
 })();
