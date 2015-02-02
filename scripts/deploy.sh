@@ -4,6 +4,9 @@ echo "Target: gh-pages branch"
 
 CURRENT_COMMIT=`git rev-parse HEAD`
 
+git config credential.helper "store --file=.git/credentials"
+echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+
 echo "Compiling new static content"
 mkdir /tmp/__temp_static_content
 harp compile . /tmp/__temp_static_content
