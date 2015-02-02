@@ -17,6 +17,7 @@ git rm -rf .
 
 echo "Copying newly generated static content"
 cp -r /tmp/__temp_static_content/* . || exit 1
+cp /tmp/__temp_static_content/.gitignore . || exit 1
 
 echo "Pushing new content back to gh-pages"
 git config user.name "Travis-CI"
