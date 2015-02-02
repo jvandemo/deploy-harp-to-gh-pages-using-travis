@@ -8,7 +8,7 @@
    * Enable HTML5 routing mode
    */
   function enableHtml5Routing($locationProvider) {
-    $locationProvider.html5Mode(true);
+    // $locationProvider.html5Mode(true);
   }
 
   // Inject dependencies;
@@ -27,7 +27,7 @@
 
     // If the url is ever invalid, e.g. '/unknown-url', then redirect to '/' aka the home state
     $urlRouterProvider
-      .otherwise('homepage');
+      .otherwise('#!/homepage');
   }
 
   // Inject dependencies;
