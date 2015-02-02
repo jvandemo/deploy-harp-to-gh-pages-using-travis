@@ -5,14 +5,14 @@ html(lang="en", ng-app="app")
         title= siteTitle
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         if environment == "production"
-            link(rel="stylesheet", href="/build/css/app.min.css")
+            link(rel="stylesheet", href="build/css/app.min.css")
             script(src="vendor/html5shiv/html5shiv.min.js")
             script(src="vendor/jquery/jquery.min.js")
             script(src="vendor/angular/angular.min.js")
             script(src="vendor/ui-router/angular-ui-router.min.js")
             script(src="build/js/app.min.js")
         else
-            link(rel="stylesheet", href="/build/css/app.css")
+            link(rel="stylesheet", href="build/css/app.css")
             script(src="vendor/html5shiv/html5shiv.js")
             script(src="vendor/jquery/jquery.js")
             script(src="vendor/angular/angular.js")
