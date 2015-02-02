@@ -23,4 +23,4 @@ bower_components
 # to include the build directories
 # in your repository
 # public/build
-public/vendor
+# public/vendor
