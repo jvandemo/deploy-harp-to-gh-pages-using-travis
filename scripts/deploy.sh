@@ -4,9 +4,6 @@ echo "Target: gh-pages branch"
 
 CURRENT_COMMIT=`git rev-parse HEAD`
 
-git config credential.helper "store --file=.git/credentials"
-echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-
 echo "Compiling new static content"
 mkdir /tmp/__temp_static_content
 harp compile . /tmp/__temp_static_content
@@ -28,7 +25,7 @@ git config user.email "travis@jvandemo.com"
 
 git add -A .
 git commit --allow-empty -m "Regenerated static content for $CURRENT_COMMIT" || exit 1
-git push --force --quiet origin gh-pages > /dev/null 2>&1 || exit 1
+git push --force --quiet "https://${GH_TOKEN}@${GH_REPO_TO_PUSH_TO}" gh-pages > /dev/null 2>&1
 
 echo "Cleaning up temp files"
 rm -Rf /tmp/__temp_static_content
