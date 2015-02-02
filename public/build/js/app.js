@@ -17,7 +17,7 @@
    * Enable HTML5 routing mode
    */
   function enableHtml5Routing($locationProvider) {
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false).hashPrefix('!');
   }
 
   // Inject dependencies;
