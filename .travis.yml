@@ -4,8 +4,10 @@ before_script:
   - npm install -g bower
   - npm install -g harp
   - bower install
+  - npm install
   - chmod +x ./scripts/deploy.sh
-script: npm run-script deploy
+script: gulp
+after_success: npm run-script deploy
 env:
   global:
     - GH_REPO_TO_PUSH_TO: github.com/jvandemo/deploy-harp-to-gh-pages-using-travis
