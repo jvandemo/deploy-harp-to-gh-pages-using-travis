@@ -6,6 +6,9 @@
     "name": "",
     "email": ""
   },
+  "script": {
+    "deploy": "./scripts/deploy.sh"
+  },
   "dependencies": {},
   "devDependencies": {
     "angular-jsdoc": "^0.1.1",
