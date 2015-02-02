@@ -7,6 +7,7 @@ CURRENT_COMMIT=`git rev-parse HEAD`
 echo "Compiling new static content"
 mkdir /tmp/__temp_static_content
 harp compile . /tmp/__temp_static_content
+cp .gitignore /tmp/__temp_static_content
 
 echo "Checking out gh-pages branch"
 git checkout -B gh-pages
