@@ -6,7 +6,7 @@
     "name": "",
     "email": ""
   },
-  "script": {
+  "scripts": {
     "deploy": "./scripts/deploy.sh"
   },
   "dependencies": {},
