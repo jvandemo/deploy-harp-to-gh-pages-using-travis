@@ -5,6 +5,8 @@ before_script:
   - npm install -g harp
   - bower install
   - chmod +x ./scripts/deploy.sh
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 script: npm run-script deploy
 env:
   global:

@@ -13,7 +13,7 @@ echo "Checking out gh-pages branch"
 git checkout -B gh-pages
 
 echo "Removing old static content"
-git rm -rf '*'
+git rm -rf .
 
 echo "Copying newly generated static content"
 cp -r /tmp/__temp_static_content/* . || exit 1
