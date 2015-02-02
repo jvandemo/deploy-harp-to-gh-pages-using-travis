@@ -25,7 +25,7 @@ git config user.email "travis@jvandemo.com"
 
 git add -A .
 git commit --allow-empty -m "Regenerated static content for $CURRENT_COMMIT" || exit 1
-git push origin gh-pages > /dev/null 2>&1 || exit 1
+git push --force --quiet origin gh-pages > /dev/null 2>&1 || exit 1
 
 echo "Cleaning up temp files"
 rm -Rf /tmp/__temp_static_content
