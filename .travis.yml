@@ -1,6 +1,9 @@
 language: node_js
-node_js:
-- '0.10'
+node_js: ['0.10']
+before_script:
+  - npm install -g bower
+  - npm install -g harp
+  - bower install
 script: npm run-script deploy
 env:
   global:
