@@ -27,7 +27,7 @@
 
     // If the url is ever invalid, e.g. '/unknown-url', then redirect to '/' aka the home state
     $urlRouterProvider
-      .otherwise('/');
+      .otherwise('/homepage');
   }
 
   // Inject dependencies;

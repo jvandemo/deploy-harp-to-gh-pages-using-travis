@@ -4,8 +4,8 @@
     .config(['$stateProvider', function ($stateProvider) {
 
       $stateProvider
-        .state('home', {
-          url: '/',
+        .state('homepage', {
+          url: '/homepage',
           views: {
             'content@': {
               templateUrl: 'components/homepage/homepage.html'
