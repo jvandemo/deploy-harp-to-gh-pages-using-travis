@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+- '0.10'
+script: npm run-script deploy
+env:
+  global:
+    secure: cdRj0FIE7cKPDjtkrk8u9XToamm6HYnKAgfzORdEpcyMg4e9Ca3BRckV0jiFfDLaO9dO3QCxpVUgj2tS1YADQVS4mi6XmIWwvYbjErBClqHgn1c6ubc2yg4ygV4MBORhHaWMo2Y+CatgH/34aXflLRvJzUbXw9rEWOKGp/BXXnw=
