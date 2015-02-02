@@ -8,7 +8,7 @@
           url: '/',
           views: {
             'content@': {
-              templateUrl: '/components/homepage/homepage.html'
+              templateUrl: 'components/homepage/homepage.html'
             }
           }
         });
