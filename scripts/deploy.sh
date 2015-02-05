@@ -21,7 +21,7 @@ echo "Copying newly generated static content"
 cp -r /tmp/__temp_static_content/* . || exit 1
 cp /tmp/__temp_static_content/.gitignore . || exit 1
 
-echo "Pushing new content to $ORIGIN_URL_WITH_CREDENTIALS"
+echo "Pushing new content to $ORIGIN_URL"
 git config user.name "Travis-CI" || exit 1
 git config user.email "travis@jvandemo.com" || exit 1
 
