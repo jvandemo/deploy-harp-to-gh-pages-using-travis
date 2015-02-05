@@ -1,13 +1,14 @@
 language: node_js
-node_js: ['0.10']
+node_js:
+- '0.10'
 before_script:
-  - npm install -g bower
-  - npm install -g harp
-  - bower install
-  - npm install
-  - chmod +x ./scripts/deploy.sh
+- npm install -g bower
+- npm install -g harp
+- bower install
+- npm install
+- chmod +x ./scripts/deploy.sh
 script: gulp process-all
 after_success: npm run-script deploy
 env:
   global:
-    - secure: cdRj0FIE7cKPDjtkrk8u9XToamm6HYnKAgfzORdEpcyMg4e9Ca3BRckV0jiFfDLaO9dO3QCxpVUgj2tS1YADQVS4mi6XmIWwvYbjErBClqHgn1c6ubc2yg4ygV4MBORhHaWMo2Y+CatgH/34aXflLRvJzUbXw9rEWOKGp/BXXnw=
+    - secure: FaPs4D9IsIvYSbm4fCXG4SIoB3SXzxWl8E5YhCDbd6q4ty++DxsUrTzdinafgbbMVQSqIhsnjeYPvO6h9JQcWh2enor5OPlFvAZqEw0++wsHfOwkYnO9XoS55isO5dZjw9sm705ymrJDRF8rhyfVzuptWGxZLfTynLR0IzWUUFw=
